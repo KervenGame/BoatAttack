@@ -171,6 +171,7 @@ namespace BoatAttack.UI
 
         public void LateUpdate()
         {
+            if (_boat == null) return;
             var rawTime = RaceManager.RaceTime;
             timeTotal.text = $"time {FormatRaceTime(rawTime)}";
 

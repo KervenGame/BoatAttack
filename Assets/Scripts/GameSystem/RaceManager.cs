@@ -110,6 +110,7 @@ namespace BoatAttack
 
         public static void Setup(Scene scene, LoadSceneMode mode)
         {
+            SceneManager.sceneLoaded -= Setup; // SetupRace only runs for the race level load, not for menu scene reloads
             Instance.StartCoroutine(SetupRace());
         }
 
