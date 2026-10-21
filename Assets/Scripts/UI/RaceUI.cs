@@ -42,6 +42,11 @@ namespace BoatAttack.UI
             RaceManager.raceStarted += SetGameplayUi;
         }
 
+        private void OnDisable()
+        {
+            RaceManager.raceStarted -= SetGameplayUi;
+        }
+
         public void Setup(int player)
         {
             _playerIndex = player;
@@ -167,6 +172,11 @@ namespace BoatAttack.UI
         public void FinishMatch()
         {
             RaceManager.UnloadRace();
+        }
+
+        public void RetryMatch()
+        {
+            RaceManager.RetryRace();
         }
 
         public void LateUpdate()

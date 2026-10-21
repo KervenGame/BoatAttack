@@ -278,6 +278,17 @@ namespace BoatAttack
             SceneManager.sceneLoaded += Setup;
         }
 
+        /// <summary>
+        /// Restart the current race with the same level and boat setup.
+        /// </summary>
+        public static void RetryRace()
+        {
+            RaceTime = 0f;
+            _boatTimes.Clear();
+            RaceStarted = false;
+            LoadGame();
+        }
+
         public static void UnloadRace()
         {
             Debug.LogWarning("Unloading Race");
