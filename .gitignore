@@ -46,3 +46,8 @@ SerializedBuildInfo
 SwitchIL2CPP*
 Assets/ActualImages*
 Packages/packages-lock.json
+
+# Local editor state
+UserSettings/Layouts/
+UserSettings/Search.index
+UserSettings/Search.settings
