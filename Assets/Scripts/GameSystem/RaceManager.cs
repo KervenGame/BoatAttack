@@ -284,7 +284,7 @@ namespace BoatAttack
         public static void RetryRace()
         {
             RaceTime = 0f;
-            _boatTimes.Clear();
+            Instance._boatTimes.Clear();
             RaceStarted = false;
             LoadGame();
         }
